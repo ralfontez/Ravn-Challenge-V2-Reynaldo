@@ -7,27 +7,38 @@ import * as serviceWorker from './serviceWorker';
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 import { ApolloProvider } from '@apollo/client';
 
-import { gql } from '@apollo/client';
+//import { gql } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: 'https://48p1r2roz4.sse.codesandbox.io',
+  uri: 'https://swapi-graphql.netlify.app/.netlify/functions/index',
   cache: new InMemoryCache()
 });
 
 // const client = ...
-
+/*
 client
   .query({
     query: gql`
-      query GetRates {
-        rates(currency: "USD") {
-          currency
+    query getPersons{
+      allPeople{
+        people{
+          name
+          birthYear
+          skinColor
+          species{
+            name
+          }
+          homeworld{
+            name
+          }
         }
+        totalCount
       }
+    }
     `
   })
   .then(result => console.log(result));
-
+*/
 
 ReactDOM.render(
   <ApolloProvider client={client}>
