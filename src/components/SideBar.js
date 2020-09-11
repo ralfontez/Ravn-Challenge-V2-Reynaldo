@@ -76,10 +76,8 @@ function SideBar({ onDogSelected }) {
   
         return (<div style={divStyle}>
            {data.allPeople.people.map(({ id, name, species, homeworld }) => (
-            <div key={id}>
-                <a onClick={(e) => onDogSelected(e,id)}>
+            <div key={id} onClick={(e) => onDogSelected(e,id)}>            
                     <ItemSideBar name={name} species={species} homeworld={homeworld} />
-                </a>
             </div>
         ))}
         </div>);

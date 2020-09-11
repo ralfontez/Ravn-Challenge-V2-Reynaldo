@@ -5,7 +5,6 @@ const itemStyle = {
     height:"69px",
     width:"349px",
     paddingLeft: "14.89px",
-
     borderBottom: "1px solid rgba(0, 0, 0, 0.1)"
 };
 
@@ -20,10 +19,7 @@ const hStyle = {
     letterSpacing: "0.0125em",
 
     color:"#333333",
-
-    paddingTop: "16px"
-    /*padding: "16px",
-    margin:"0px",*/    
+    paddingTop: "16px"  
     
 };
 
@@ -57,7 +53,7 @@ function ItemSideBar(props) {
                 {props.name}
             </div>
             <div style={pStyle}>
-                <p><span>{props.species !==null? props.species.name:"Human"}</span> {` from ` }
+                <p style={{padding: "0px", margin: "0px"}}><span>{props.species !==null? props.species.name:"Human"}</span> {` from ` }
                 <span>{props.homeworld.name}</span></p>
             </div>                         
         </div>
