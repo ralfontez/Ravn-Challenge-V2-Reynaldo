@@ -12,6 +12,7 @@ const divStyle = {
 
   background: "#121212",
   boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.25)",
+
 }
 
 const spanStyle = {
@@ -25,8 +26,8 @@ const spanStyle = {
 
   fontFamily: "SF Pro Display",
   fontStyle: "normal",
-  fontweight: "bold",
-  fontsize: "17px",
+  fontWeight: "bold",
+  fontSize: "17px",
   lineHeight: "20px",
   display: "flex",
   alignItems: "center",
@@ -35,7 +36,6 @@ const spanStyle = {
   /* Gray 6 */
 
   color: "#F2F2F2",
-
 }
 
 const NavBar = (props) => {

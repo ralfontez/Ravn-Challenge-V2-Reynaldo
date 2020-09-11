@@ -50,19 +50,21 @@ const valueStyle = {
     paddingTop: "14px",
     paadingBottom: "15px",
     width: "100%",
+
+    textTransform: "capitalize", 
 }
 
 const InfoCell = (props) => { 
     
     if(props.children !== undefined){
         return (
-            <div key={props.key} style={divStyle}>
+            <div key={props.k} style={divStyle}>
                 <span style={featureStyle}>{props.children}</span>
             </div>
         )      
     }else{
         return (
-            <div key={props.key} style={divStyle}>
+            <div key={props.k} style={divStyle}>
                 <span style={featureStyle}>{props.info}</span>
                 <span style={valueStyle}>{props.value}</span>
             </div>

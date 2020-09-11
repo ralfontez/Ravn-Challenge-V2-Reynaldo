@@ -40,18 +40,16 @@ function Content(props){
     if (error) return `Error! ${error.message}`
 
     return (
-        <div>
-            <div className="" style={divStyle}>
-                <TableSectionHeader>General Information</TableSectionHeader>
-                <InfoCell key="1" info="Eye Color" value={data.person.eyeColor}></InfoCell>
-                <InfoCell key="2" info="Hair Color" value={data.person.hairColor}></InfoCell>
-                <InfoCell key="3" info="Skin Color" value={data.person.skinColor}></InfoCell>
-                <InfoCell key="4" info="birth Year" value={data.person.birthYear}></InfoCell>
-                <TableSectionHeader>Vehicles</TableSectionHeader>
-                {data.person.vehicleConnection.vehicles.map(({ id, name }) => (                    
-                    <div key={id}><InfoCell >{name}</InfoCell></div>                
-                ))} 
-            </div>
+        <div className="" style={divStyle}>
+            <TableSectionHeader>General Information</TableSectionHeader>
+            <InfoCell key="1" info="Eye Color" value={data.person.eyeColor}></InfoCell>
+            <InfoCell key="2" info="Hair Color" value={data.person.hairColor}></InfoCell>
+            <InfoCell key="3" info="Skin Color" value={data.person.skinColor}></InfoCell>
+            <InfoCell key="4" info="birth Year" value={data.person.birthYear}></InfoCell>
+            <TableSectionHeader>Vehicles</TableSectionHeader>
+            {data.person.vehicleConnection.vehicles.map(({ id, name }) => (                    
+                <InfoCell key={id} k={id}>{name}</InfoCell>               
+            ))} 
         </div>
     )
 }
