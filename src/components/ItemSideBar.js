@@ -57,7 +57,7 @@ function ItemSideBar(props) {
                 {props.name}
             </div>
             <div style={pStyle}>
-                <span>{props.species !==null? props.species.name:"Human"}</span> {` from `} 
+                <span>{props.species !==null? props.species.name:"Human"}</span> {" from "} 
                 <span>{props.homeworld.name}</span>
             </div>                         
         </div>

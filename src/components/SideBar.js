@@ -25,6 +25,7 @@ const ALL_PERSONS = gql`
   query getPersons{
     allPeople{
       people{
+        id
         name
         birthYear
         skinColor
@@ -40,15 +41,45 @@ const ALL_PERSONS = gql`
   }
 `;
 
+const PERSON_BY_ID = gql`
+    query GetPeople($personID: ID){
+        person(personID: $personID){
+            eyeColor
+            hairColor
+            skinColor
+            birthYear
+                vehicleConnection{
+                    vehicles {
+                        name
+                    }
+            }
+        }
+    }
+`;
+
+function GetPersonById(id) {
+    const { loading, error, data } = useQuery(PERSON_BY_ID, {
+      variables: { personID: id }
+    });
+
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error :(</p>;
+    
+    return <h1>Hello {data.person.eyeColor}!</h1>;
+  }
+
+
 function AllPersons() {
   const { loading, error, data } = useQuery(ALL_PERSONS);
+  
+  console.log(data);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
-  return data.allPeople.people.map(({name, species, homeworld}) => (
-        <div>
-            <ItemSideBar name={name} species={species} homeworld={homeworld}/>
+  return data.allPeople.people.map(({id, name, species, homeworld}) => (
+        <div>           
+            <ItemSideBar onClick={(id)=>GetPersonById(id)} key={id} name={name} species={species} homeworld={homeworld}/>            
         </div>
   ));
 }
