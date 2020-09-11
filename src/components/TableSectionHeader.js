@@ -21,7 +21,7 @@ const divStyle = {
     paddingBottom: "8px"
 }
 
-class GeneralInfo extends Component{
+class TableSectionHeader extends Component{
     render(){
         return (
         <div className="" style={divStyle}>{this.props.children}</div>
@@ -30,4 +30,4 @@ class GeneralInfo extends Component{
 }
     
 
-export default GeneralInfo;
+export default TableSectionHeader;

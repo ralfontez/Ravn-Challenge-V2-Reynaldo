@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 const divStyle = {
     /* Header */
@@ -60,18 +60,18 @@ const valueStyle = {
 }
 
 
-const Info = (props) => { 
+const InfoCell = (props) => { 
     
     if(props.children !== undefined){
         return (
-            <div className="" style={divStyle}>
+            <div key={props.key} className="" style={divStyle}>
                 <span style={featureStyle}>{props.children}</span>
             </div>
         )  
           
     }else{
         return (
-            <div className="" style={divStyle}>
+            <div key={props.key} className="" style={divStyle}>
                 <span style={featureStyle}>{props.info}</span>
                 <span style={valueStyle}>{props.value}</span>
             </div>
@@ -81,4 +81,4 @@ const Info = (props) => {
 }
     
 
-export default Info;
+export default InfoCell;

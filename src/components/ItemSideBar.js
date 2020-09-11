@@ -4,7 +4,9 @@ const itemStyle = {
     backgroundColor: "#FFFFFF",
     height:"69px",
     width:"349px",
-    paddingLeft: "14.89px"
+    paddingLeft: "14.89px",
+
+    borderBottom: "1px solid rgba(0, 0, 0, 0.1)"
 };
 
 const hStyle = {
@@ -26,8 +28,6 @@ const hStyle = {
 };
 
 const pStyle = {
-    fontSize: '15px',
-    textAlign: 'center',
 
     /* Paragraph */
 
@@ -57,8 +57,8 @@ function ItemSideBar(props) {
                 {props.name}
             </div>
             <div style={pStyle}>
-                <span>{props.species !==null? props.species.name:"Human"}</span> {" from "} 
-                <span>{props.homeworld.name}</span>
+                <p><span>{props.species !==null? props.species.name:"Human"}</span> {` from ` }
+                <span>{props.homeworld.name}</span></p>
             </div>                         
         </div>
     )     

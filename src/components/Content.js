@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-import GeneralInfo from './GeneralInfo';
-import Info from './Info';
+import InfoCell from './InfoCell';
+import TableSectionHeader from './TableSectionHeader';
 
-
+import { useQuery, gql } from '@apollo/client';
 
 const divStyle = {
     marginTop: "52px",
@@ -11,27 +11,49 @@ const divStyle = {
     marginRight: "100px", 
 
     background: "#FFFFFF",
-
 }
 
-class Content extends Component{
-    render(){
-        return (
-            <div>
-                <div className="" style={divStyle}>
-                    <GeneralInfo>General Information</GeneralInfo>
-                    <Info info="Eye Color" value="Blue"></Info>
-                    <Info info="Hair Color" value="Blond"></Info>
-                    <Info info="Skin Color" value="Fair"></Info>
-                    <Info info="Eye Color" value="19BBY"></Info>
-                    <GeneralInfo>Vehicles</GeneralInfo>
-                    <Info >Snowspeeder</Info>
-                    <Info >Imperial Speeder Bike</Info>
-                </div>
-            </div>
-        )   
+const PERSON_BY_ID = gql`
+    query GetPeople($personID: ID!){
+        person(id: $personID){
+            eyeColor
+            hairColor
+            skinColor
+            birthYear
+            vehicleConnection{
+                vehicles {
+                    name
+                }
+            }
+        }
     }
+`;
+
+
+function Content(props){
+
+    const { loading, error, data } = useQuery(PERSON_BY_ID, {
+        variables: { personID: props.personID},
+    });
+  
+    if (loading) return 'Loading...';
+    if (error) return `Error! ${error.message}`
+
+    return (
+        <div>
+            <div className="" style={divStyle}>
+                <TableSectionHeader>General Information</TableSectionHeader>
+                <InfoCell key="1" info="Eye Color" value={data.person.eyeColor}></InfoCell>
+                <InfoCell key="2" info="Hair Color" value={data.person.hairColor}></InfoCell>
+                <InfoCell key="3" info="Skin Color" value={data.person.skinColor}></InfoCell>
+                <InfoCell key="4" info="birth Year" value={data.person.birthYear}></InfoCell>
+                <TableSectionHeader>Vehicles</TableSectionHeader>
+                {data.person.vehicleConnection.vehicles.map(({ id, name }) => (                    
+                    <InfoCell key={id}>{name}</InfoCell>                  
+                ))} 
+            </div>
+        </div>
+    )
 }
-    
 
 export default Content;
