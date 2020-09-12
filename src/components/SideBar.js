@@ -27,12 +27,13 @@ const ALL_PERSONS = gql`
 const divStyle = {
     position: "absolute",
     width: "350px",
-    height: "848px",
+    // height: "848px",
     left: "0px",
     top: "52px",
     background: "#FFFFFF",
+    // background: "blue",
     boxShadow: "1px 0px 0px rgba(0, 0, 0, 0.15)",
-    borderRight: ""
+    paddingLeft: "14.89px",
 }
 
 
@@ -65,6 +66,14 @@ const divStyle = {
 //     ));
 // };
 
+const itemStyle = {
+    backgroundColor: "#FFFFFF",
+    height:"69px",
+    width:"349px",
+    // paddingLeft: "14.89px",
+    borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
+
+};
 
 function SideBar({ onDogSelected }) {
 
@@ -76,7 +85,7 @@ function SideBar({ onDogSelected }) {
   
         return (<div style={divStyle}>
            {data.allPeople.people.map(({ id, name, species, homeworld }) => (
-            <div key={id} onClick={(e) => onDogSelected(e,id)}>            
+            <div key={id} onClick={(e) => onDogSelected(e,id)} style={itemStyle}>            
                     <ItemSideBar name={name} species={species} homeworld={homeworld} />
             </div>
         ))}

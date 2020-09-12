@@ -1,12 +1,12 @@
 import React from 'react';
 
-const itemStyle = {
-    backgroundColor: "#FFFFFF",
-    height:"69px",
-    width:"349px",
-    paddingLeft: "14.89px",
-    borderBottom: "1px solid rgba(0, 0, 0, 0.1)"
-};
+// const itemStyle = {
+//     backgroundColor: "#FFFFFF",
+//     height:"69px",
+//     width:"349px",
+//     paddingLeft: "14.89px",
+//     borderBottom: "1px solid rgba(0, 0, 0, 0.1)"
+// };
 
 const hStyle = {
     fontFamily: "SFProDisplay",
@@ -48,7 +48,7 @@ const pStyle = {
 
 function ItemSideBar(props) {    
     return (
-        <div className="" style={itemStyle}>
+        <div className="">
             <div className="" style={hStyle}>
                 {props.name}
             </div>
