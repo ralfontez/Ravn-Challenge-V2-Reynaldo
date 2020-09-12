@@ -11,7 +11,7 @@ To test the **Ravn Challenge**, you need to follow this steps:
  3. Now, you can type on the terminal: `npm start` into **Ravn-Challenge-V2-Reynaldo** folder. 
  4. Go to Url: `http://localhost:3000/`
 
-If you want to see online, check this [one](https://ravn-challenge-v2.netlify.app/). 
+Visit here for [**Live demo**](https://ravn-challenge-v2.netlify.app/). 
 
 ## Project description
 In this project, we have the possibility to see details of each of the characters of [Start War](https://en.wikipedia.org/wiki/Star_Wars). 
