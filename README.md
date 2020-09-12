@@ -15,22 +15,25 @@ Visit here for [**Live demo**](https://ravn-challenge-v2.netlify.app/).
 
 ## Project description
 In this project, we can see the list of all the peoples from Start Wars on the right bar side. 
+
 ![Side bar](https://raw.githubusercontent.com/ralfontez/Ravn-Challenge-V2-Reynaldo/master/src/images/barside.png)
+
 Once is selected an item from the bar side, the web application show us the detailed information of the character. 
+
 ![General information](https://raw.githubusercontent.com/ralfontez/Ravn-Challenge-V2-Reynaldo/master/src/images/content.png)
 
-In the content area (**right side**), we can see some feature
+In the content area (**right side**), we can see some features and 
 
-|  **General Info**  |
-|--------------------|
-|Eye Color           |
-|Hair Color          |
-|Skin Color          |
-|Birth Year          |
+|**General Info**|
+|----------------|
+|Eye Color       |
+|Hair Color      |
+|Skin Color      |
+|Birth Year      |
 
-And the list of some **vehicles**.
+... the list of some **vehicles**.
 
-> **Remenber**: Once selecting a character from **Side Bar**, we can see the details on the **Right Side**.
+> **Remember**: Once selecting a character from the **Side Bar**, we can see the details on the **Right Side**.
 
 ## Screenshots of the working application
 Some screenshots of the application can be seen here. 
