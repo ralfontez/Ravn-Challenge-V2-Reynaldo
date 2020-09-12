@@ -27,11 +27,10 @@ const ALL_PERSONS = gql`
 const divStyle = {
     position: "absolute",
     width: "350px",
-    // height: "848px",
+    // height: "100%",
     left: "0px",
     top: "52px",
     background: "#FFFFFF",
-    // background: "blue",
     boxShadow: "1px 0px 0px rgba(0, 0, 0, 0.15)",
     paddingLeft: "14.89px",
 }
