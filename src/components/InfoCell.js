@@ -3,7 +3,7 @@ import React from 'react';
 const divStyle = {
     /* Header */
 
-    fontFamily: "SF Pro Display",
+    fontFamily: "SFProDisplay",
     fontStyle: "normal",
     fontWeight: "bold",
     fontSize: "17px",

@@ -40,7 +40,7 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      message: 'hola',
+      message: 'cGVvcGxlOjE=',
     }
   }
 
@@ -52,11 +52,11 @@ class App extends Component {
 
   render() {
     return (       
-          <div>               
-            <NavBar/>
-            <SideBar onDogSelected = {(e, id)=>this.callbackFunction(e, id)}/>    
-            <Content personID = {this.state.message}/>                  
-          </div>       
+      <div>               
+        <NavBar/>
+        <SideBar onDogSelected = {(e, id)=>this.callbackFunction(e, id)}/>    
+        <Content personID = {this.state.message}/>                  
+      </div>       
     );
   }
 }

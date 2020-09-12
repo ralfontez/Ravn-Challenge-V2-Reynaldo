@@ -9,7 +9,7 @@ const itemStyle = {
 };
 
 const hStyle = {
-    fontFamily: "SF Pro Display",
+    fontFamily: "SFProDisplay",
     fontStyle: "normal",
     fontWeight: "bold",
     fontSize: "17px",
@@ -27,7 +27,7 @@ const pStyle = {
 
     /* Paragraph */
 
-    fontFamily: "SF Pro Display",
+    fontFamily: "SFProDisplay",
     fontStyle: "normal",
     fontWeight: "normal",
     fontSize: "14px",
