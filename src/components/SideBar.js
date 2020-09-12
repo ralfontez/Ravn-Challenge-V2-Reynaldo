@@ -74,11 +74,21 @@ const itemStyle = {
 
 };
 
+const loadingStyle = {
+    backgroundColor: "#FFFFFF",
+    height:"69px",
+    width:"349px",
+    float: "center",
+    marginLeft: "14.89px",
+    // borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
+
+};
+
 function SideBar({ onDogSelected }) {
 
     const { loading, error, data } = useQuery(ALL_PERSONS);
   
-    if (loading) return 'Loading...';
+    if (loading) return <div style={loadingStyle}>{'Loading...'}</div>;
     if (error) return `Error! ${error.message}`;
 
   
