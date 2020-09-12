@@ -31,8 +31,7 @@ Another image of the web application.
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
 ## Assumptions
-
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+No assumptions were made.
 
 ## Technologies used
 The technologies that were used are 
