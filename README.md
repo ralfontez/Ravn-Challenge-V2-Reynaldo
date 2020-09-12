@@ -26,13 +26,16 @@ We have a list of characters in the **Side Bar**, and once it is selected we can
 
 ## Screenshots of the working application
 Some screenshots of the application can be seen here. 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-Another image of the web application.
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
+![Web application](https://raw.githubusercontent.com/ralfontez/Ravn-Challenge-V2-Reynaldo/master/src/images/webapp.png)
 
 ## Assumptions
-No assumptions were made.
 
+The font was downloaded from [fontsfree.net](http://fontsfree.net/sf-pro-display-regular-font-download.html). Then was put into a new **./src/fonts** folder, and some instructions were put into **./index.js** and **./index.css**.
+
+![Web application](https://raw.githubusercontent.com/ralfontez/Ravn-Challenge-V2-Reynaldo/master/src/images/indexjs.png)
+
+![Web application](https://raw.githubusercontent.com/ralfontez/Ravn-Challenge-V2-Reynaldo/master/src/images/indexcss.png)
 ## Technologies used
 The technologies that were used are 
 
