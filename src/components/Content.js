@@ -49,7 +49,7 @@ function Content(props){
             <TableSectionHeader>Vehicles</TableSectionHeader>
             {data.person.vehicleConnection.vehicles.map(({ id, name }) => (                    
                 <InfoCell key={id} k={id}>{name}</InfoCell>               
-            ))} 
+            ))}
         </div>
     )
 }

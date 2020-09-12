@@ -1,68 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ravn Challenge!
 
-## Available Scripts
+This is the project in which we demonstrate some programing skills in [ReactJS](https://reactjs.org/) and Apollo Graphql. In this project, we get the information from [swapi](https://swapi-graphql.netlify.app/.netlify/functions/index), which is a start war API. The queries were made by [Apollo Graphql](https://www.apollographql.com/). 
 
-In the project directory, you can run:
+# Setup/Running instruction
 
-### `npm start`
+To test the **Ravn Challenge**, you need to follow this steps:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ 1. First of all, clone from GitHub: `git clone git@github.com:ralfontez/Ravn-Challenge-V2-Reynaldo.git`
+ 2. Then install from the directory **Ravn-Challenge-V2-Reynaldo.git** with: `npm install`
+ 3. Now, you can type on the terminal: `npm start` into **Ravn-Challenge-V2-Reynaldo** folder. 
+ 4. Go to Url: `http://localhost:3000/`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Project description
+In this project, we have the possibility to see details of each of the characters of [Start War](https://en.wikipedia.org/wiki/Star_Wars). 
 
-### `npm test`
+|  **General Info**  |
+|--------------------|
+|Eye Color           |
+|Hair Color          |
+|Skin Color          |
+|Birth Year          |
+|  **Some Vehicles**      |
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We have a list of characters in the **Side Bar**, and once it is selected we can see the details on the right side. 
 
-### `npm run build`
+## Screenshots of the working application
+Some screenshots of the application can be seen here. 
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+Another image of the web application.
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Assumptions
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies used
+The technologies that were used are 
 
-### `npm run eject`
+ - [ReactJS](https://reactjs.org/)
+ - [Apollo Graphql](https://reactjs.org/)
+ - [Node.js](https://reactjs.org/) 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
