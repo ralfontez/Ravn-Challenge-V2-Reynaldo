@@ -7,7 +7,7 @@ This is the project in which we demonstrate some programing skills in [ReactJS](
 To test the **Ravn Challenge**, you need to follow this steps:
 
  1. First of all, clone from GitHub: `git clone git@github.com:ralfontez/Ravn-Challenge-V2-Reynaldo.git`
- 2. Then install from the directory **Ravn-Challenge-V2-Reynaldo.git** with: `npm install`
+ 2. Then install from the directory **Ravn-Challenge-V2-Reynaldo** with: `npm install`
  3. Now, you can type on the terminal: `npm start` into **Ravn-Challenge-V2-Reynaldo** folder. 
  4. Go to Url: `http://localhost:3000/`
 
